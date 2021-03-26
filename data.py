@@ -9,6 +9,8 @@ import tensorflow as tf
 
 from distutils.version import LooseVersion
 
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 VERSION_GTE_0_12_0 = LooseVersion(tf.__version__) >= LooseVersion('0.12.0')
 
 # Name change in TF v 0.12.0

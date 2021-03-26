@@ -13,6 +13,9 @@ import tensorflow as tf
 from detect import *
 import re
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 RESIZE_AOI = 256
 RESIZE_FINAL = 227
 

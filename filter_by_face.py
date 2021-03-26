@@ -7,6 +7,9 @@ import sys
 from utils import *
 import csv
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 # YOLO tiny
 #python fd.py --filename /media/dpressel/xdata/insights/converted/ --face_detection_model weights/YOLO_tiny.ckpt --face_detection_type yolo_tiny --target yolo.csv
 

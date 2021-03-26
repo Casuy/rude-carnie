@@ -2,6 +2,10 @@ from detect import ObjectDetector
 
 import dlib
 import cv2
+
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 FACE_PAD = 50
 
 class FaceDetectorDlib(ObjectDetector):

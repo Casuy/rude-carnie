@@ -4,6 +4,8 @@ import numpy as np
 import tensorflow as tf
 import cv2
 
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 class YOLOBase(ObjectDetector):
     def __init__(self):
         pass

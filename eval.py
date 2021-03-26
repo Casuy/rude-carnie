@@ -39,6 +39,9 @@ from model import select_model, get_checkpoint
 import os
 import json
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 tf.app.flags.DEFINE_string('train_dir', '/home/dpressel/dev/work/AgeGenderDeepLearning/Folds/tf/test_fold_is_0',
                            'Training directory (where training data lives)')
 

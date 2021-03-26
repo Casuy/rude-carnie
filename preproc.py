@@ -12,6 +12,8 @@ import numpy as np
 import tensorflow as tf
 import json
 
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 RESIZE_HEIGHT = 256
 RESIZE_WIDTH = 256
 

@@ -13,6 +13,8 @@ from model import select_model
 import json
 import re
 
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 
 LAMBDA = 0.01
 MOM = 0.9

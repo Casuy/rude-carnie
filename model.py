@@ -13,6 +13,9 @@ from tensorflow.contrib.layers import *
 
 from tensorflow.contrib.slim.python.slim.nets.inception_v3 import inception_v3_base
 
+import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
 
 TOWER_NAME = 'tower'
 
